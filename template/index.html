@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="content-container">
+            <div class="title-container">
+                <h1>Team Creator</h1>
+                <label for="mapSelect">Map</label>
+                <input type="text" name="mapSelect" id="mapSelect" placeholder="Select Map"/>
+            </div>
+            <div class="agentList">
+                <div class="agent">
+                    <div class="control-container">
+                        <img src="x.svg" alt="x">
+                    </div>
+                    <div class="agent-content">
+                        <div class="agent-dp-container" id="cypher">
+                        </div>
+                        <div class="agent-name">Cypher</div>
+                        <div class="site-container">
+                            <div class="attack-site-container">
+                                <h3>Attacking Site</h3>
+                                <p class="siteText">B</p>
+                            </div>
+                            <div class="defense-site-container">
+                                <h3>Defending Site</h3>
+                                <p class="siteText">C</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="newAgent">
+                    <div class="new-control-container">
+                        <img src="+.svg" alt="+">
+                    </div>
+                    <div class="agent-content">
+                        <div class="new-agent-dp-container">
+                        </div>
+                        <div class="agent-name">
+                            <input type="text" name="newName" id="newName" placeholder="Agent"/>
+                        </div>
+                        <div class="site-container">
+                            <div class="attack-site-container">
+                                <h3>Attacking Site</h3>
+                                <input type="text" name="newName" id="newName"/>
+                            </div>
+                            <div class="defense-site-container">
+                                <h3>Defending Site</h3>
+                                <input type="text" name="newName" id="newName"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
