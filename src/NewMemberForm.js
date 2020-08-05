@@ -38,7 +38,11 @@ class NewMemberForm extends Component{
             defendSite: this.state.defenseInput,
             image: imageFile
         }
-        this.props.addAgent(data)
+
+        if(this.state.nameInput !== '' && this.state.attackInput !== '' && this.state.defenseInput !== ''){
+            this.props.addAgent(data)
+        }
+        
     }
 
     render(){

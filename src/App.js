@@ -12,7 +12,7 @@ class App extends Component {
         { 
           id:1,
           name: 'cypher',
-          attackSite: 'B',
+          attackSite: 'A',
           defendSite: 'C',
           image: 'cypher.png'
         },
@@ -26,8 +26,8 @@ class App extends Component {
         { 
           id:3,
           name: 'raze',
-          attackSite: 'B',
-          defendSite: 'A',
+          attackSite: 'C',
+          defendSite: 'B',
           image: 'raze.png'
         }
 
@@ -88,7 +88,7 @@ class App extends Component {
                 var listProps = {
                   key: agent.id,
                   removeAgent: this.removeAgent,
-                  upadteAgent: this.upadteAgent,
+                  updateAgent: this.updateAgent,
                   ...agent
                 }
                 return(
@@ -96,7 +96,6 @@ class App extends Component {
                 )
               })
             }
-              
               <NewMemberForm addAgent={this.addAgent}/>
           </div>
         </div>
